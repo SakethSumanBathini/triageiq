@@ -11,7 +11,7 @@
 
 **NxtGig AI Product Builder Accelerator — Season 1 | Problem Statement #1**
 
-[Live Demo](https://triageiq.vercel.app) · [API Docs](https://triageiq-api.onrender.com/docs) · [Video Walkthrough](#)
+[Live Demo](https://triageiq-gules.vercel.app) · [API Docs](https://triageiq-api-production.up.railway.app/docs) · [Video Walkthrough](#)
 
 </div>
 
@@ -240,13 +240,13 @@ curl -X POST http://localhost:8000/api/triage \
 4. Build command: `pip install -r requirements.txt`
 5. Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 6. Add env variables in Render dashboard (your 4 API keys)
-7. Copy your URL e.g. `https://triageiq-api.onrender.com`
+7. Copy your URL e.g. `https://triageiq-api-production.up.railway.app`
 
 ### Frontend → Vercel (Free)
 
 1. Go to **vercel.com** → New Project → import repo
 2. Root directory: `frontend`
-3. Add env variable: `VITE_API_URL=https://triageiq-api.onrender.com`
+3. Add env variable: `VITE_API_URL=https://triageiq-api-production.up.railway.app`
 4. Deploy → copy live URL
 
 ---
@@ -280,7 +280,7 @@ triageiq/
 │   │   ├── types/index.ts          # All TypeScript interfaces
 │   │   └── lib/api.ts              # API client + utility helpers
 │   └── package.json
-├── render.yaml                     # Render deployment config
+├── railway.json                 # Railway deployment config
 ├── .gitignore                      # Protects .env and secrets
 └── README.md
 ```

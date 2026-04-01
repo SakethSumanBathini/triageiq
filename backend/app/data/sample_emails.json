@@ -1,0 +1,62 @@
+[
+  {
+    "subject": "URGENT: Production server completely down - customers cannot login",
+    "body": "Hi Support Team,\n\nOur production server has been completely unresponsive since 3:45 PM IST. All our customers are getting 503 errors when trying to login. We have approximately 500 active users affected right now. This is causing massive revenue loss and we need immediate resolution.\n\nWe've tried restarting the app server but the issue persists. Error logs show: 'Connection pool exhausted - database unreachable'.\n\nPlease escalate this IMMEDIATELY. I am the CTO and I need a response in the next 10 minutes.\n\nRegards,\nAnand Kumar\nCTO, TechCorp India",
+    "sender": "anand.kumar@techcorp.in",
+    "sender_name": "Anand Kumar"
+  },
+  {
+    "subject": "Incorrect charge on my invoice - billed twice for same month",
+    "body": "Hello,\n\nI noticed that my credit card was charged twice this month - once on March 1st for $49 and again on March 15th for $49. Both show as 'TriageIQ Pro Plan' on my statement.\n\nMy account ID is ACC-4821. Could you please look into this and refund the duplicate charge?\n\nI've been a customer for 2 years and never had billing issues before. Please resolve this as soon as possible.\n\nThank you,\nSarah Mitchell",
+    "sender": "sarah.m@startupxyz.com",
+    "sender_name": "Sarah Mitchell"
+  },
+  {
+    "subject": "How do I export data to CSV?",
+    "body": "Hi,\n\nI'm trying to export my analytics data to a CSV file but can't find the option anywhere in the dashboard. I've looked in Settings, Reports, and Analytics tabs but no luck.\n\nCould you point me to where this feature is? Or is it only available on the Pro plan? I'm currently on the Starter plan.\n\nThanks,\nMike Johnson",
+    "sender": "mike.j@freelancer.io",
+    "sender_name": "Mike Johnson"
+  },
+  {
+    "subject": "Login not working - password reset email never arrives",
+    "body": "I cannot log into my account. I tried resetting my password three times but the reset email never arrives. I checked spam folder too.\n\nMy email: priya.dev@example.com\nAccount created: January 2024\n\nI have an important demo with a client in 2 hours and urgently need access. Please help!",
+    "sender": "priya.dev@example.com",
+    "sender_name": "Priya Dev"
+  },
+  {
+    "subject": "Feature Request: Dark mode for dashboard",
+    "body": "Hey team,\n\nLove the product! One thing I'd really love is a dark mode option for the dashboard. I work late nights and the bright white interface is quite harsh on the eyes.\n\nWould also be great if you could add keyboard shortcuts for common actions. Would make power users like me much more productive.\n\nKeep up the great work!\n\nCheers,\nTom Wilson",
+    "sender": "tom.w@designstudio.com",
+    "sender_name": "Tom Wilson"
+  },
+  {
+    "subject": "site broken call me",
+    "body": "nothing works. call me. urgent.",
+    "sender": "unknown@gmail.com",
+    "sender_name": "Unknown"
+  },
+  {
+    "subject": "API rate limiting and billing question",
+    "body": "Hello Support,\n\nI have two questions:\n\n1) We're hitting rate limits on the API even though we're on the Business plan which says 'unlimited API calls'. Is there actually a limit?\n\n2) We received an invoice last week that seems higher than our contract price. Invoice #INV-2891 shows $450 but we agreed on $380/month.\n\nCan you help with both issues? The API rate limiting is affecting our production system right now.\n\nBest,\nRajesh Patel\nLead Developer, FinanceApp",
+    "sender": "rajesh.p@financeapp.io",
+    "sender_name": "Rajesh Patel"
+  },
+  {
+    "subject": "SALE! 50% off all plans - Limited time offer!!!",
+    "body": "Congratulations! You've been selected for our exclusive offer!\n\nGet 50% off ALL plans for the next 24 hours only!\n\nClick here to claim your discount: http://totally-legit-deals.xyz/claim\n\nDon't miss this amazing opportunity!\n\nBest Regards,\nThe TriageIQ Team",
+    "sender": "noreply@totally-legit-deals.xyz",
+    "sender_name": "Deals Team"
+  },
+  {
+    "subject": "Bug: Export button throws JavaScript error in Firefox",
+    "body": "Hi,\n\nI found a bug in your dashboard. When I click the Export to PDF button in Firefox (version 121.0 on Windows 11), I get a JavaScript error:\n\n'TypeError: Cannot read properties of undefined (reading map)'\n\nThe same action works fine in Chrome. I've attached a screenshot of the console error.\n\nSteps to reproduce:\n1. Log in to dashboard\n2. Go to Reports tab\n3. Click 'Export to PDF'\n4. Error appears immediately\n\nThis is blocking our reporting workflow. Please fix soon.\n\nThanks,\nLi Wei",
+    "sender": "li.wei@company.cn",
+    "sender_name": "Li Wei"
+  },
+  {
+    "subject": "Can you add Slack integration? Also your pricing seems high",
+    "body": "Hello,\n\nFirst, a feature request: we'd love a native Slack integration so we can get triage notifications directly in our Slack channels. This would be super useful for our team.\n\nSecond, I was comparing your pricing with competitors and feel the $99/month Business plan is a bit steep for what's included. Do you offer any discounts for annual billing or non-profits? We're a registered NGO.\n\nThanks for building a great product regardless!\n\nAmara Osei\nOperations Manager",
+    "sender": "amara.o@ngo-impact.org",
+    "sender_name": "Amara Osei"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tm_001",
+    "name": "Priya Sharma",
+    "role": "Senior Engineer",
+    "skills": ["Bug Report", "Escalation", "Account Access"],
+    "avatar": "PS",
+    "current_load": 2,
+    "max_load": 5
+  },
+  {
+    "id": "tm_002",
+    "name": "Rahul Mehta",
+    "role": "Billing Specialist",
+    "skills": ["Billing", "Account Access", "General Inquiry"],
+    "avatar": "RM",
+    "current_load": 3,
+    "max_load": 8
+  },
+  {
+    "id": "tm_003",
+    "name": "Sneha Iyer",
+    "role": "Support Engineer",
+    "skills": ["How-To", "General Inquiry", "Feature Request"],
+    "avatar": "SI",
+    "current_load": 4,
+    "max_load": 10
+  },
+  {
+    "id": "tm_004",
+    "name": "Arjun Patel",
+    "role": "DevOps Lead",
+    "skills": ["Escalation", "Bug Report"],
+    "avatar": "AP",
+    "current_load": 1,
+    "max_load": 3
+  },
+  {
+    "id": "tm_005",
+    "name": "Divya Rao",
+    "role": "Junior Support",
+    "skills": ["How-To", "General Inquiry"],
+    "avatar": "DR",
+    "current_load": 5,
+    "max_load": 8
+  }
+]

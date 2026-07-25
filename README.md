@@ -238,15 +238,15 @@ https://triageiq-api-production.up.railway.app
 
 ### Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/triage` | Triage a single email |
-| `POST` | `/api/triage/batch` | Triage up to 20 emails at once |
-| `GET` | `/api/team` | Team roster with current workload |
-| `GET` | `/api/analytics` | Aggregated triage statistics |
-| `GET` | `/api/samples` | 10 pre-built realistic demo emails |
-| `GET` | `/api/health` | Health check + all 4 provider status |
-| `GET` | `/docs` | Interactive Swagger UI |
+| Method | Endpoint            | Description                                  |
+|--------|---------------------|----------------------------------------------|
+| `POST` | `/api/triage`       | Triage a single email                        |
+| `POST` | `/api/triage/batch` | Triage up to 20 emails at once               |
+| `GET`  | `/api/team`         | Team roster with current workload            |
+| `GET`  | `/api/analytics`    | Aggregated triage statistics                 |
+| `GET`  | `/api/samples`      | 10 pre-built realistic demo emails           |
+| `GET`  | `/api/health`       | Health check + status of all 4 providers     |
+| `GET`  | `/docs`             | Interactive Swagger UI                       |
 
 ### Example Request
 

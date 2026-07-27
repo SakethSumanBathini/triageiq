@@ -16,11 +16,15 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
+# Comma-separated allowlist. Fail closed to localhost when unset/empty.
+_raw_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173")
+origins = [o.strip() for o in _raw_origins.split(",") if o.strip()]
+if not origins:
+    origins = ["http://localhost:5173"]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

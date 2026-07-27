@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {
   Zap, RotateCcw, AlertTriangle, CheckCircle,
-  Clock, Users, Filter, ChevronDown
+  Clock, Users, Filter, ChevronDown, Inbox
 } from 'lucide-react'
 import type { BatchTriageResponse, TriageResponse } from '../../types'
 import {
@@ -75,6 +75,52 @@ export default function Dashboard({ results, onReset }: Props) {
       color: '#00d4ff'
     },
   ]
+
+  if (results.results.length === 0) {
+    return (
+      <div className="min-h-screen flex flex-col">
+        <motion.header
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex items-center justify-between px-6 py-4 border-b border-[rgba(0,212,255,0.08)]"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+              <Zap size={16} className="text-white" />
+            </div>
+            <span className="font-bold text-lg text-white" style={{ fontFamily: 'Syne, sans-serif' }}>
+              Triage<span className="text-electric">IQ</span>
+            </span>
+          </div>
+          <button onClick={onReset} className="btn-secondary py-2">
+            <RotateCcw size={14} />
+            New Analysis
+          </button>
+        </motion.header>
+        <div className="flex-1 flex items-center justify-center p-8">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center max-w-md"
+          >
+            <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-electric/10 border border-electric/20 flex items-center justify-center">
+              <Inbox size={28} className="text-electric" />
+            </div>
+            <h2 className="text-2xl font-bold text-white mb-2" style={{ fontFamily: 'Syne, sans-serif' }}>
+              No emails triaged yet
+            </h2>
+            <p className="text-[#8ba3c4] text-sm leading-relaxed mb-6" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+              Paste a support email on the input screen to get AI classification, urgency scores, and routing suggestions.
+            </p>
+            <button onClick={onReset} className="btn-primary py-3 px-6">
+              <Zap size={16} />
+              Triage your first email
+            </button>
+          </motion.div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen flex flex-col">

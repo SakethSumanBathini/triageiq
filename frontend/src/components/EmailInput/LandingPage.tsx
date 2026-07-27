@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Zap, Plus, Trash2, Mail, ChevronDown, AlertCircle, Sparkles } from 'lucide-react'
+import { Zap, Plus, Trash2, Mail, ChevronDown, AlertCircle, Sparkles, Eraser } from 'lucide-react'
 import type { EmailInput } from '../../types'
 import { getSampleEmails } from '../../lib/api'
 
@@ -50,6 +50,16 @@ export default function LandingPage({ onSubmit, isLoading, error }: Props) {
     setShowSamples(false)
     setActiveIndex(0)
   }
+
+
+  const clearActiveEmail = () => {
+    setEmails(prev => prev.map((e, i) => i === activeIndex ? emptyEmail() : e))
+  }
+
+  const isActiveEmpty = !emails[activeIndex]?.subject.trim()
+    && !emails[activeIndex]?.body.trim()
+    && !emails[activeIndex]?.sender.trim()
+    && !emails[activeIndex]?.sender_name.trim()
 
   const canSubmit = emails.some(e => e.subject.trim() && e.body.trim())
 
@@ -255,6 +265,16 @@ export default function LandingPage({ onSubmit, isLoading, error }: Props) {
 
         {/* Submit */}
         <motion.div className="mt-6 flex items-center gap-4">
+          <button
+            type="button"
+            onClick={clearActiveEmail}
+            disabled={isActiveEmpty || isLoading}
+            className="btn-secondary py-4 px-5"
+            aria-label="Clear email form"
+          >
+            <Eraser size={16} />
+            Clear
+          </button>
           <button
             onClick={() => onSubmit(emails.filter(e => e.subject.trim() && e.body.trim()))}
             disabled={!canSubmit || isLoading}
